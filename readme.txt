@@ -26,3 +26,13 @@ Server needs to be stopped and start again for detecting changes. To overcome th
 
 Wrote a small script in package.json for running the server with custom command.
 
+Now its time to connect the database i.e MongoDB for that I installed mongoose i.e npm i mongoose
+
+Using this in index.js just get the connecttion string from mongo db official site for ur databse and add using mongoose.connect() method
+
+It takes time to first configure the database on official site post which we get a connection string
+
+Now connection string cannot be added directly to code as it is has credentials so we use .env file to hide it while uploading.
+
+For this a package is installed called dotenv i.e npm i dotenv which helps to extract the data variable from .env file and use it dynamically in the connection string. 
+
