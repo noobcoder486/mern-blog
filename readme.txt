@@ -36,3 +36,16 @@ Now connection string cannot be added directly to code as it is has credentials 
 
 For this a package is installed called dotenv i.e npm i dotenv which helps to extract the data variable from .env file and use it dynamically in the connection string. 
 
+After this we are working on user sign up. For that we need to create a user schema and a user model so that we can use it to store the user.
+
+To store it we need api, for that we create a test api in index.js. But for better readability we create a separate route folder in index.js
+
+And for each route we create a separate controller to manage the logic. After that we can run and test the 'test api'.
+
+To develop a signup api, we create a route in api/routes with the name auth.In that we declare the app.use(controller_name)
+
+Now the logic part of signup is written in controller/auth.controller.js where we validate the user and then sign them up using try catch and user.save().
+
+
+
+
